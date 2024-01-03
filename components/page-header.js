@@ -27,20 +27,20 @@ export default function PageHeader({
           <FadeInWhenVisible>
 
 
-<div className="relative grid grid-cols-12 h-full items-end py-32  z-50">
+<div className="relative grid grid-cols-12 h-full items-end md:py-32  z-50">
 
-  <div className="col-span-12 md:col-span-6 flex flex-col gap-6">
+  <div className="col-span-12 mb-16 md:col-span-6 flex flex-col gap-6">
 
     
     <TextAnimation content={title && title} color={'text-white'}/>
 
-    <h2 className="text-slate-400 font-light col-span-6 md:col-span-6 text-2xl text-left  text-balance">
+    <h2 className="text-slate-300 font-light col-span-6 md:col-span-6 text-2xl text-left text-balance leading-relaxed">
     {subtitle}
     </h2>
   
   </div>
 
-  <div className="gap-1 col-span-12 md:col-span-4 md:col-start-9 flex flex-col gap-6 text-sm font-bold text-pink-600">
+  <div className="gap-1 col-span-12 md:col-span-4 md:col-start-9 mb-8 md:mb-auto flex flex-col gap-6 h-full rich-text">
         {content && (
         <>{documentToReactComponents(content.json, RichTextOptions)}</>
         )}

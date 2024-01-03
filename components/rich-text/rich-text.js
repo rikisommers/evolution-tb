@@ -10,7 +10,7 @@ export const RichTextOptions = {
     [INLINES.HYPERLINK]: (node, children) => {
       const { uri } = node.data;
       return (
-        <a href={uri} className="text-sky-500 underline">
+        <a href={uri} className="text-pink-300 underline">
           {children}
         </a>
       );
@@ -31,7 +31,7 @@ export const RichTextOptions = {
       return <small className="text-xs font-normal text-slate-200 mb-2">{children}</small>;
     },
     [BLOCKS.PARAGRAPH]: (node, children) => {
-      return <p className="text-lg leading-loose font-medium mb-4">{children}</p>;
+      return <p className="text-xl leading-loose font-medium">{children}</p>;
     },
     // [BLOCKS.UL_LIST]: (node, children) => {
     //   return <div className="text-slate-200">{children}</div>;

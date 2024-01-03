@@ -139,8 +139,15 @@ $sides: (top, bottom, left, right); // Leave this variable alone
 .rich-text{
   ul{
     margin:0 0 0 1rem;
-    padding:2rem 0;
-    list-style-type: circle;
-    color:rgb(236 72 153);
+    padding:1rem 0;
+    list-style-type: disc;
+    color:#f472b6;
+
+    li{
+      margin-bottom:1rem;
+       p{      
+        line-height: 1.6;
+       }
+    }
   }
 }

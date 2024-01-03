@@ -23,7 +23,7 @@
 html,
 body{
   height  : 100%;
-  overflow: hidden;
+ // overflow: hidden;
 }
 
 .grad{
@@ -38,9 +38,9 @@ body{
     color:$text;
     margin:0;
 
-    &.prevent-scroll{
-     overflow: hidden;
-    }
+    // &.prevent-scroll{
+    //  overflow: hidden;
+    // }
     // background-color:rgb(241, 245, 249);
     // background: #DAE2F8;  /* fallback for old browsers */
     // background: -webkit-linear-gradient(to bottom, #D6A4A4, #DAE2F8);  /* Chrome 10-25, Safari 5.1-6 */
@@ -286,14 +286,14 @@ position: relative;
 .scrollable,body{
   flex-grow: 1;
   position: relative;
-   overflow: scroll;
-  scrollbar-width: none !important;
-  -ms-overflow-style: none;
+   overflow-y: scroll;
+  // scrollbar-width: none !important;
+  // -ms-overflow-style: none;
 
-  &::-webkit-scrollbar {
-    width: 0 !important;
-    height: 0 !important;
-  }
+  // &::-webkit-scrollbar {
+  //   width: 0 !important;
+  //   height: 0 !important;
+  // }
 
   // fix bottom gradient
   padding-bottom: desktop-vh(40px);
@@ -434,7 +434,6 @@ position: relative;
 }
 
   .text-anim-word{
-    font-size: 4rem;
     perspective: 3.5em;
     transform-style: preserve-3d;
     display: inline-flex;
@@ -552,9 +551,9 @@ position: relative;
   font-size: 16px;
 }
 
-.goo{
-  filter: url("#goo");
-}
+// .goo{
+//   filter: url("#goo");
+// }
 
 .svg-filter{
   position: fixed;

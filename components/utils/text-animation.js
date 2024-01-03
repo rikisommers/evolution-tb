@@ -66,7 +66,7 @@ export default function TextAnimation({ content, style , direction, size, color 
 
   return (
     <motion.h1
-      className="text-anim"
+      className="text-anim "
       key="text-wrapper"
       variants={container}
       initial="hidden"
@@ -81,7 +81,7 @@ export default function TextAnimation({ content, style , direction, size, color 
           return (
             <motion.span
               variants={wordv}
-              className={`text-anim-word overflow-hidden ${color}`}
+              className={`text-anim-word text-6xl md:text-7xl word-balance leading-tight overflow-hidden ${color}`}
               key={index}
             > 
               {word.split("").map(function (letter, index) {

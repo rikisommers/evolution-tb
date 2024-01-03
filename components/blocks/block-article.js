@@ -9,7 +9,7 @@ export const BlockArticle = ({ article }) => {
     <article className="grid grid-cols-12 gap-3" id={article.title}>
 
       <div className="col-start-1 col-span-12 md:col-start-1 md:col-span-4">
-        {article.title && <h2 className="text-3xl mb-10 text-pink-500">{article.title}</h2>}
+        {article.title && <h2 className="text-3xl mb-10 text-pink-400">{article.title}</h2>}
       </div>
 
       <div className="col-start-1 col-span-12 md:col-start-5 md:col-span-6">

@@ -5,6 +5,7 @@ import BlockQuote from "../blocks/block-quote"
 import BlockImg from "../blocks/block-img"
 import BlockEmbed  from "../blocks/block-embed"
 import BlockImages from "../blocks/block-images"
+import FadeInWhenVisible from "../utils/fade-in-visible"
 
 const customMarkdownOptions = (content) => ({
   renderNode: {
@@ -25,6 +26,8 @@ export default function PostBody({ content }) {
           content.items.length > 0 &&
           content.items.map((item,index) => {
             return (
+              <FadeInWhenVisible>
+
               <section key={index}>
                 {item.__typename === "BlockArticle" && (
                   <BlockArticle key={item.id} article={item} ></BlockArticle>
@@ -50,7 +53,7 @@ export default function PostBody({ content }) {
                 
 
               </section>
-
+              </FadeInWhenVisible>
                 // {/* {item.__typename === "BlockEmbed" && (
                 //   <h1>Add component for EMBED</h1>
                 // )} */}
