@@ -22,7 +22,7 @@ export default function PostBody({ content }) {
   return (
     <div className="px-8 md:px-16 lg:px-32 flex flex-col gap-40 py-32">
 
-        {content.items &&
+        {content?.items &&
           content.items.length > 0 &&
           content.items.map((item,index) => {
             return (
