@@ -1,0 +1,227 @@
+[
+  {
+    "ts": "2024-01-02T10:59:44.785Z",
+    "level": "error",
+    "error": {
+      "name": "AccessDenied",
+      "entity": {
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "4v0tb3n9jpvc"
+            }
+          },
+          "id": "textLoop",
+          "type": "ContentType",
+          "createdAt": "2023-11-07T09:26:35.491Z",
+          "updatedAt": "2023-11-07T09:38:44.382Z",
+          "environment": {
+            "sys": {
+              "id": "master",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "publishedVersion": 7,
+          "publishedAt": "2023-11-07T09:38:44.382Z",
+          "firstPublishedAt": "2023-11-07T09:26:35.861Z",
+          "createdBy": {
+            "sys": {
+              "type": "Link",
+              "linkType": "User",
+              "id": "592YzpVUnhmCJtQBNvcJxR"
+            }
+          },
+          "updatedBy": {
+            "sys": {
+              "type": "Link",
+              "linkType": "User",
+              "id": "592YzpVUnhmCJtQBNvcJxR"
+            }
+          },
+          "publishedCounter": 4,
+          "version": 8,
+          "publishedBy": {
+            "sys": {
+              "type": "Link",
+              "linkType": "User",
+              "id": "592YzpVUnhmCJtQBNvcJxR"
+            }
+          }
+        },
+        "displayField": null,
+        "name": "text loop",
+        "description": "",
+        "fields": [
+          {
+            "id": "textLine",
+            "name": "text line",
+            "type": "Array",
+            "localized": false,
+            "required": false,
+            "validations": [
+            ],
+            "disabled": false,
+            "omitted": false,
+            "items": {
+              "type": "Link",
+              "validations": [
+                {
+                  "linkContentType": [
+                    "richTextSnippet"
+                  ],
+                  "message": "fuck"
+                }
+              ],
+              "linkType": "Entry"
+            }
+          }
+        ]
+      },
+      "data": {
+        "status": 403,
+        "statusText": "Forbidden",
+        "message": "Forbidden",
+        "details": {
+          "reasons": [
+            "usageExceeded",
+            "You do not have permissions to create on ContentType, please contact your administrator for more information."
+          ]
+        },
+        "request": {
+          "url": "/spaces/3r9ig29zbex2/environments/master/content_types/textLoop",
+          "headers": {
+            "Accept": "application/json, text/plain, */*",
+            "Content-Type": "application/vnd.contentful.management.v1+json",
+            "X-Contentful-User-Agent": "app contentful.cli/1.12.32; feature space-import; sdk contentful-management.js/7.54.2; platform node.js/v19.4.0; os macOS/v19.4.0;",
+            "CF-Sequence": "09fd752d-9421-4db0-9ada-7a59aa4ebc46",
+            "Authorization": "Bearer ...1zYkA",
+            "user-agent": "node.js/v19.4.0",
+            "Accept-Encoding": "gzip",
+            "Content-Length": 321
+          },
+          "method": "put",
+          "payloadData": "{\"displayField\":null,\"name\":\"text loop\",\"description\":\"\",\"fields\":[{\"id\":\"textLine\",\"name\":\"text line\",\"type\":\"Array\",\"localized\":false,\"required\":false,\"validations\":[],\"disabled\":false,\"omitted\":false,\"items\":{\"type\":\"Link\",\"validations\":[{\"linkContentType\":[\"richTextSnippet\"],\"message\":\"fuck\"}],\"linkType\":\"Entry\"}}]}"
+        },
+        "requestId": "5b727265-2edc-46ee-b60a-b4b17f13a9df"
+      }
+    }
+  },
+  {
+    "ts": "2024-01-02T10:59:44.790Z",
+    "level": "error",
+    "error": {
+      "name": "AccessDenied",
+      "entity": {
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "4v0tb3n9jpvc"
+            }
+          },
+          "id": "richTextSnippet",
+          "type": "ContentType",
+          "createdAt": "2023-11-07T09:35:27.697Z",
+          "updatedAt": "2023-11-07T09:35:28.131Z",
+          "environment": {
+            "sys": {
+              "id": "master",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "publishedVersion": 1,
+          "publishedAt": "2023-11-07T09:35:28.131Z",
+          "firstPublishedAt": "2023-11-07T09:35:28.131Z",
+          "createdBy": {
+            "sys": {
+              "type": "Link",
+              "linkType": "User",
+              "id": "592YzpVUnhmCJtQBNvcJxR"
+            }
+          },
+          "updatedBy": {
+            "sys": {
+              "type": "Link",
+              "linkType": "User",
+              "id": "592YzpVUnhmCJtQBNvcJxR"
+            }
+          },
+          "publishedCounter": 1,
+          "version": 2,
+          "publishedBy": {
+            "sys": {
+              "type": "Link",
+              "linkType": "User",
+              "id": "592YzpVUnhmCJtQBNvcJxR"
+            }
+          }
+        },
+        "displayField": null,
+        "name": "rich text snippet",
+        "description": "",
+        "fields": [
+          {
+            "id": "content",
+            "name": "content",
+            "type": "RichText",
+            "localized": false,
+            "required": false,
+            "validations": [
+              {
+                "enabledMarks": [
+                  "italic",
+                  "underline",
+                  "bold"
+                ],
+                "message": "Only italic, underline, and bold marks are allowed"
+              },
+              {
+                "enabledNodeTypes": [
+                ],
+                "message": "Nodes are not allowed"
+              },
+              {
+                "nodes": {
+                }
+              }
+            ],
+            "disabled": false,
+            "omitted": false
+          }
+        ]
+      },
+      "data": {
+        "status": 403,
+        "statusText": "Forbidden",
+        "message": "Forbidden",
+        "details": {
+          "reasons": [
+            "usageExceeded",
+            "You do not have permissions to create on ContentType, please contact your administrator for more information."
+          ]
+        },
+        "request": {
+          "url": "/spaces/3r9ig29zbex2/environments/master/content_types/richTextSnippet",
+          "headers": {
+            "Accept": "application/json, text/plain, */*",
+            "Content-Type": "application/vnd.contentful.management.v1+json",
+            "X-Contentful-User-Agent": "app contentful.cli/1.12.32; feature space-import; sdk contentful-management.js/7.54.2; platform node.js/v19.4.0; os macOS/v19.4.0;",
+            "CF-Sequence": "09fd752d-9421-4db0-9ada-7a59aa4ebc46",
+            "Authorization": "Bearer ...1zYkA",
+            "user-agent": "node.js/v19.4.0",
+            "Accept-Encoding": "gzip",
+            "Content-Length": 393
+          },
+          "method": "put",
+          "payloadData": "{\"displayField\":null,\"name\":\"rich text snippet\",\"description\":\"\",\"fields\":[{\"id\":\"content\",\"name\":\"content\",\"type\":\"RichText\",\"localized\":false,\"required\":false,\"validations\":[{\"enabledMarks\":[\"italic\",\"underline\",\"bold\"],\"message\":\"Only italic, underline, and bold marks are allowed\"},{\"enabledNodeTypes\":[],\"message\":\"Nodes are not allowed\"},{\"nodes\":{}}],\"disabled\":false,\"omitted\":false}]}"
+        },
+        "requestId": "297992d9-ef07-4f12-8152-53f0b9d6a62f"
+      }
+    }
+  }
+]
