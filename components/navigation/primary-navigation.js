@@ -1,17 +1,12 @@
 import Link from "next/link";
-import { motion, cubicBezier, useAnimationControls } from "framer-motion";
-import { useRouter } from "next/router";
-import { useEffect, useState, useContext, useRef } from "react";
-import { useScrollPosition } from "../scrollPosContext";
-import { RouteContext } from "../routeContext";
-import Audio from "./audio";
+import { motion, cubicBezier } from "framer-motion";
 export default function Navigation() {
 
   return (
     <>
 
       <motion.div
-        className="logo_wrapper bg-slate-950"
+        className="logo_wrapper bg-slate-800"
       > 
 
       <div className="logo">
@@ -56,12 +51,12 @@ export default function Navigation() {
               >
               Contact
               </a>
-              <a 
+              {/* <a 
               target="_blank"
               className="ml-1 rounded-lg bg-[#F0047F] text-white py-2 px-4 overflow-hidden"
               href={"https://docs.google.com/forms/d/e/1FAIpQLSd5tMR_mWZ9BpZ7Lz206JVpFlWUPKN4lbfVS87Gg2Rnpv08Kw/viewform"}>
               Lease/Buy
-              </a>
+              </a> */}
       
       </div>
     </>
